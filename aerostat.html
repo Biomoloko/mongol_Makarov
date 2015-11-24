@@ -3,66 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
   <div class="container">
-    <div class="logo">Монгольфьеркин и КО</div>
+   <div class="row">
+    <div class="logo col5">Монгольфьеркин и КО</div>
+
+    <div class="header-nav col7">
+
+      <a href="" class="header-btn col2">Кто мы</a>
+      <a href="" class="header-btn col2">Фотографии</a>
+      <a href="" class="header-btn col2">План полета</a>
+      <a href="" class="header-btn col2">Заказать</a>
+      <a href="" class="header-btn col2">Команда</a>
+      <a href="" class="header-btn col2">Контакты</a>
+
+    </div>
+   </div>
   </div>
-  <nav class="header-nav">
-    <ul>
-      <li><a href="" class="header-btn">Кто мы</a></li>
-      <li><a href="" class="header-btn">Фотографии</a></li>
-      <li><a href="" class="header-btn">План полета</a></li>
-      <li><a href="" class="header-btn">Заказать</a></li>
-      <li><a href="" class="header-btn"><Команда/a></li>
-      <li><a href="" class="header-btn">Контакты</a></li>
-    </ul>
-  </nav>
 </header>
 
-<section class="promo">
+<section class="promo center">
   <div class="container">
     <p class="promo-text">Организация полетов
 на воздушных шарах</p>
-    <a href="" class="about-btn center">Подробнее</a>
+    <a href="" class="about-btn">Подробнее</a>
   </div>
 </section>
 
 <section class="advantages">
   <div class="container">
-    <div class="advantage-item"><span class="advantage-text">Современный
+    <div class="row">
+      <div class="advantage-item col3"><span class="advantage-text">Современный
 надежный шар</span></div>
-    <div class="advantage-item"><span class="advantage-text">Обучение
+      <div class="advantage-item col3"><span class="advantage-text">Обучение
 пилотированию
     </span></div>
-    <div class="advantage-item"><span class="advantage-text">Фотосъемка
+      <div class="advantage-item col3"><span class="advantage-text">Фотосъемка
 в полете</span></div>
-    <div class="advantage-item"><span class="advantage-text">Потрясающие
+      <div class="advantage-item col3"><span class="advantage-text">Потрясающие
 виды</span></div>
+    </div>
   </div>
 </section>
 
 <section class="video">
   <div class="container">
-    <aside class="about-video">
-      <b>Вкратце</b>
+  <div class="row">
+    <div class="about-video col4">
+      <p class="in-short h3">Вкратце</p>
       <p>Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. Мы предлагаем полетать с нами!</p>
-    </aside>
-    <div class="video-viev"></div>
+    </div>
+    <div class="video-viev col8">
+
+    </div>
+  </div>
   </div>
 </section>
 
-<section class="slider">
+<section class="gallery">
+
   <div class="container">
-    <p class="gallery center">Галерея</p>
-    <div class="slider"></div>
-    <p class="how-to-fly center">Как проходят полеты</p>
-    <div class="fly-exampe"></div>
+ <p class="gallery-title center h2">Галерея</p>
+    <div class="slider" id="slider">
+      <div><img src="img/gallery1.jpg" height="245" width="245" alt=""></div>
+      <div><img src="img/gallery2.jpg" height="245" width="245" alt=""></div>
+      <div><img src="img/gallery3.jpg" height="245" width="245" alt=""></div>
+      <div><img src="img/gallery4.jpg" height="245" width="245" alt=""></div>
+      <div><img src="img/gallery2.jpg" height="245" width="245" alt=""></div>
+    </div>
+    <!-- <p class="how-to-fly center">Как проходят полеты</p>
+    <div class="fly-exampe"></div> -->
+  </div>
+</section>
+
+<section class="how-we-fly">
+  <div class="container">
+    <p class="center h2">Как проходят полеты</p>
   </div>
 </section>
 
@@ -73,35 +95,40 @@
   </div>
 </section>
 
-<div class="cost">
+<section class="cost">
   <div class="container">
-    <div class="about-cost">
-      <b class="about-cost-text">Расчитать стоимость</b>
+  <div class="row">
+    <div class="about-cost col6">
+      <p class="about-cost-text h3">Расчитать стоимость</p>
       <p class="choose-direct">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.
 
 Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».
 
 Выбирайте, куда мы полетим сегодня!</p>
     </div>
-    <div class="calculate-cost">
-      <span>Маршрут полета:</span>
-      <input type="text">Lorem.</input>
-      <span>Количество человек</span>
-      <input type="text">Voluptatum.</input>
-      <span>Имя и фамилия</span>
-      <input type="text">Autem.</input>
+    <div class="calculate-cost col6">
+
+      <label class="input-item" for="">Маршрут полета:
+      <input type="text"></input></label>
+
+      <label class="input-item" for="">КОличество человек
+      <input type="text"></input></label>
+      <label class="input-item" for="">Имя и Фамилия
+      <input type="text"></input></label>
       <span>телефон</span>
-      <input type="text">A.</input>
+      <input type="text"></input>
       <p class="current-cost">Стоимость<b class="value">9 000р</b></p>
       <a href="" class="im-ready">Полетели</a>
     </div>
   </div>
-</div>
+ </div>
+</section>
 
 <section class="info-questions">
   <div class="container">
-    <div class="pay-way">
-      <h3 class="pay-way-title">Способы оплаты</h3>
+  <div class="row">
+    <div class="pay-way col6">
+      <p class="pay-way-title h3">Способы оплаты</p>
       <b class="cash">Наличными</b>
       <p class="how-pay">Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:
 
@@ -112,10 +139,8 @@
       <p class="contacts">— по телефону: +7 (812) 640-19-39
 — или по почте: mnebyvnebo@gmail.com</p>
       <p class="docs">Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
-    </div>
 
-    <div class="to-deliver">
-    <div class="to-deliver-title">Курьеру</div>
+      <p class="h3" class="to-deliver-title">Курьеру</p>
       <p class="pay-deliver">Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
       <p class="contacts-deliver">— по телефону: +7 (812) 640-19-39,
 — или по почте:
@@ -124,8 +149,8 @@
     </div>
 
 
-    <div class="questions">
-      <h3 class="common-questions">Частые вопросы</h3>
+    <div class="questions col6">
+      <p class="common-questions h3">Частые вопросы</p>
 
       <p class="question-name">Что взять с собой в полет?</p>
       <p class="question-answer">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
@@ -139,7 +164,7 @@
       <p class="question-name">А полет - это действительно так здорово ?</p>
       <p class="question-answer">Это в тысячу раз лучше шоколада</p>
     </div>
-
+  </div>
  </div>
 </section>
 
@@ -148,60 +173,67 @@
 
 <section class="digits">
   <div class="container">
-    <div class="digit-container"><span class="current-digit">700</span><span class="digit-name">Полет в год</span></div>
+  <div class="row">
+    <div class="digit-container col3"><span class="current-digit">700</span><span class="digit-name">Полет в год</span></div>
 
-    <div class="digit-container"><span class="current-digit">3000</span><span class="digit-name">Средняя дальность в метрах</span></div>
+    <div class="digit-container col3"><span class="current-digit">3000</span><span class="digit-name">Средняя дальность в метрах</span></div>
 
-    <div class="digit-container"><span class="current-digit">3</span><span class="digit-name">Воздушных шара</span></div>
+    <div class="digit-container col3"><span class="current-digit">3</span><span class="digit-name">Воздушных шара</span></div>
 
-    <div class="digit-container"><span class="current-digit">12</span><span class="digit-name">Человек в команде</span></div>
+    <div class="digit-container col3"><span class="current-digit">12</span><span class="digit-name">Человек в команде</span></div>
+    </div>
   </div>
 </section>
 
 
 <section class="team">
-  <h3 class="trainers-team">Команда Инструкторов</h3>
-  <div class="trainers">
-    <div class="about-trainer">
+ <div class="container">
+  <div class="row">
+  <h3 class="trainers-team center">Команда Инструкторов</h3>
+   <div class="trainers">
+    <div class="about-trainer col3">
       <img src="" alt="" class="trainer-photo" >
       <span class="trainer-name">Мария Мариева</span>
       <span class="trainer-job">Старший пилот</span>
     </div>
-    <div class="about-trainer">
+    <div class="about-trainer col3">
       <img src="" alt="" class="trainer-photo" >
       <span class="trainer-name">Надежда Надеждова</span>
       <span class="trainer-job">Второй пилот</span>
     </div>
-    <div class="about-trainer">
+    <div class="about-trainer col3">
       <img src="" alt="" class="trainer-photo" >
       <span class="trainer-name">Ирина Иринова</span>
       <span class="trainer-job">Авиадиспетчер</span>
     </div>
-    <div class="about-trainer">
+    <div class="about-trainer col3">
       <img src="" alt="" class="trainer-photo" >
       <span class="trainer-name">Алена Аленова</span>
       <span class="trainer-job">Авиатехник</span>
     </div>
+   </div>
   </div>
+ </div>
 </section>
 
 
 <section class="comments">
   <div class="container">
+   <h3 class="comment-title center">Отзывы</h3>
+  <div class="row">
+    <div class="comment-info col6">
 
-    <h3 class="comment-title center">Отзывы</h3>
-
-    <div class="comment-info">
       <img src="" alt="" class="commenter-photo">
       <p class="commenter-name">Ольга Алексеева</p>
       <p class="commenter-comment">Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
     </div>
 
-    <div class="comment-info">
+    <div class="comment-info col6">
       <img src="" alt="" class="commenter-photo">
       <span class="commenter-name">Артем Рыбкин</span>
       <p class="commenter-comment">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</p>
     </div>
+   </div>
   </div>
 </section>
 
@@ -211,44 +243,60 @@
 
 <section class="adress">
   <div class="container">
+
     <div class="adress-title center">
       <h2 class="write-adress">Запишите адрес аэропорта</h2>
       <p class="street">Всеволожск, улица Аэродромная 19а</p>
     </div>
-
-    <div class="office">
+<div class="row">
+    <div class="office col4">
       <p class="office-town">Наш офис в Питере:</p>
       <p class="office-current-adress">Литейный 14Б</p>
       <p class="office-time">12:00 - 19:00</p>
       <p class="office-phone-number">746-67-33</p>
     </div>
 
-    <div class="office">
+    <div class="office col4">
       <p class="office-town">Наш Офис во Всеволожске:</p>
       <p class="office-current-adress">Аэродромная 19А</p>
       <p class="office-time">12:00 - 19:00</p>
       <p class="office-phone-number">746-67-33</p>
     </div>
-  <div class="post">
+  <div class="post col4">
     <a class="post">mnebyvnebo@gmail.com</a>
+  </div>
   </div>
   </div>
 </section>
 
 
 <footer>
-  <div class="footer-logo">Монгольфьеркин и КО</div>
-  <nav class="vooter-nav">
+<div class="row">
+<div class="container">
+  <div class="footer-logo col4">Монгольфьеркин и КО</div>
+  <nav class="vooter-nav col8">
     <ul>
       <li><a href="" class="footer-links">Кто мы</a></li>
       <li><a href="" class="footer-links">Фотографии</a></li>
-      <li><a href="" class="footer-links"></a>План Полета</li>
-      <li><a href="" class="footer-links"></a>Заказать</li>
-      <li><a href="" class="footer-links"></a>Команда</li>
-      <li><a href="" class="footer-links"></a>Контакты</li>
+      <li><a href="" class="footer-links">План Полета</a></li>
+      <li><a href="" class="footer-links">Заказать</a></li>
+      <li><a href="" class="footer-links">Команда</a></li>
+      <li><a href="" class="footer-links">Контакты</a></li>
     </ul>
   </nav>
+  </div>
+</div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+
+<script>
+  $("#slider").slick();
+</script>
 
 </body>
 </html>
