@@ -180,11 +180,11 @@ height: 70PX;
 /*-------------HOW-TO-FLY------------*/
 
 .how-we-fly{
-  min-height: 600px;
+  min-height: 750px;
   background-image: url(../img/how-fly.jpg);
-  background-repeat: space;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 200px;
+  background-position: center 200px;
 }
 .how-we-fly-text {
 margin-top: 80px;
@@ -201,17 +201,35 @@ margin-top: 80px;
   width: 70px;
   right: 535px;
   top:55px;}
+.sky-path{margin-top: 200px;}
 
 
 
 
-
+/*-------------Timer------------*/
 
 
 
 
 .timer{
   min-height: 40px;
+}
+
+.title,
+.measure,
+.days,
+.hours,
+.minutes,
+.seconds{
+  float: left;
+}
+
+.measure:before,
+.days:before,
+.hours:before,
+.minutes:before,
+.seconds:before{
+  content:"\00a0\00a0";
 }
 
 .cost{

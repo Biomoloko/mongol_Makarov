@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="js/script.js">
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
@@ -85,8 +86,6 @@
       <div><img src="img/gallery4.jpg" height="245" width="245" alt=""></div>
       <div><img src="img/gallery2.jpg" height="245" width="245" alt=""></div>
     </div>
-    <!-- <p class="how-to-fly center">Как проходят полеты</p>
-    <div class="fly-exampe"></div> -->
   </div>
 </section>
 
@@ -95,12 +94,35 @@
   <div class=" how-we-fly-text-cont center">
     <p class="h2 how-we-fly-text">Как проходят полеты</p>
   </div>
+  <img class="sky-path" src="img/sky-path.png" alt="">
   </div>
 </section>
 
 <section class="timer">
   <div class="container">
-    <p>До ближайшего полета</p>
+    <div class="timer">
+  <span class="title">Стартуем:</span>
+
+  <span class="count">
+    <span class="days">00</span>
+    <span class="measure measure-days">дней</span>
+  </span>
+
+  <span class="count">
+    <span class="hours">00</span>
+    <span class="measure measure-hours">часов</span>
+  </span>
+
+  <span class="count">
+    <span class="minutes">00</span>
+    <span class="measure measure-minutes">минут</span>
+  </span>
+
+  <span class="count">
+    <span class="seconds">00</span>
+    <span class="measure measure-seconds">секунд</span>
+  </span>
+</div>
     <div class="timer"></div>
   </div>
 </section>
@@ -307,7 +329,7 @@
 <script>
   $("#slider").slick({
 slidesToShow: 4,
-slidesToScroll: 3,
+slidesToScroll: 1,
 });
 </script>
 
