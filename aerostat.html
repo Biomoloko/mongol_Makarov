@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="js/script.js">
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
@@ -14,18 +13,19 @@
 <header class="header">
   <div class="container">
    <div class="row">
-    <div class="logo col5">Монгольфьеркин и КО</div>
+    <div class="logo left"><a class="logo-btn" href="">Монгольфьеркин и КО</a></div>
 
-    <div class="header-nav col7">
-
-      <a href="" class="header-btn col2">Кто мы</a>
-      <a href="" class="header-btn col2">Фотографии</a>
-      <a href="" class="header-btn col2">План полета</a>
-      <a href="" class="header-btn col2">Заказать</a>
-      <a href="" class="header-btn col2">Команда</a>
-      <a href="" class="header-btn col2">Контакты</a>
-
+    <div class="menu-nav right">
+      <ul>
+      <li class="inline"><a href="#video" class="menu-btn">Кто мы</a></li>
+      <li class="inline"><a href="#slider" class="menu-btn">Фотографии</a></li>
+      <li class="inline"><a href="#how-we-fly" class="menu-btn">План полета</a></li>
+      <li class="inline"><a href="#cost" class="menu-btn">Заказать</a></li>
+      <li class="inline"><a href="#trainers" class="menu-btn">Команда</a></li>
+      <li class="inline"><a href="#adress" class="menu-btn ">Контакты</a>
+      </ul></li>
     </div>
+
    </div>
   </div>
 </header>
@@ -35,7 +35,7 @@
     <p class="promo-text">Организация полетов
 на воздушных шарах</p>
   <div class="about-btn-cont">
-    <a href="" class="about-btn">Подробнее</a>
+    <a href="#cost" class="about-btn">Подробнее</a>
   </div>
   </div>
 </section>
@@ -56,7 +56,7 @@
   </div>
 </section>
 
-<section class="video">
+<section class="video" id="video">
   <div class="container">
   <div class="row">
     <div class="about-video col5">
@@ -66,7 +66,7 @@
       <p class="about-video-text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. </br> </br>Мы предлагаем полетать с нами!</p>
     </div>
     <div class="video-viev col7">
-      <iframe width="700px" height="350px" src="https://www.youtube.com/embed/lxlgJvMLGrc" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/lxlgJvMLGrc" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   </div>
@@ -83,7 +83,7 @@
    <div class="gallery-title-cont">
    <p class="gallery-title center h2">Галерея</p>
    </div>
-    <div class="slider" id="slider">
+    <div class="slider" id="gallery-photo">
       <div><img src="img/gallery1.jpg" height="245" width="245" alt=""></div>
       <div><img src="img/gallery2.jpg" height="245" width="245" alt=""></div>
       <div><img src="img/gallery3.jpg" height="245" width="245" alt=""></div>
@@ -93,7 +93,7 @@
   </div>
 </section>
 
-<section class="how-we-fly">
+<section class="how-we-fly" id="how-we-fly">
   <div class="container">
   <div class=" how-we-fly-text-cont center">
     <p class="h2 how-we-fly-text">Как проходят полеты</p>
@@ -102,10 +102,14 @@
   </div>
 </section>
 
+
+
+
+
 <section class="timer-sec">
   <div class="container">
     <div class="timer">
-  <span class="title">Стартуем:</span>
+  <span class="title">До ближайшего полета:</span>
 
   <span class="count">
     <span class="days">00</span>
@@ -135,7 +139,7 @@
 
 
 
-<section class="cost">
+<section class="cost" id="cost">
   <div class="container">
   <div class="row">
     <div class="about-cost col6">
@@ -184,7 +188,8 @@
       <p class="how-pay">Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</br></br>
 
 — по телефону: +7 (812) 640-19-39</br>
-— или по почте: <a href="" class="post-adres">mnebyvnebo@gmail.com</a></br></br>
+— или по почте: <a href="" class="post-adres">mnebyvnebo@gmail.com</a>
+</br></br>
 
 Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
 
@@ -241,24 +246,32 @@
   <div class="row">
        <div class="trainers-tem-cont"><p class="trainers-team center h2">Команда Инструкторов</p>
        </div>
-   <div class="trainers">
+   <div class="trainers" id="trainers">
     <div class="about-trainer col3">
-      <img src="img/team1.png" height="160" width="160" alt="" class="trainer-photo" >
+      <img src="img/team1.png" height="160" width="160" alt="" class="trainer-photo"
+      onmouseout='src="img/team1.png";'
+      onmouseover='this.src="img/googles.png";'>
       <p class="trainer-name">Мария Мариева</p>
       <p class="trainer-job">Старший пилот</p>
     </div>
     <div class="about-trainer col3">
-      <img src="img/team2.png" height="160" width="160" alt="" class="trainer-photo" >
+      <img src="img/team2.png" height="160" width="160" alt="" class="trainer-photo"
+      onmouseout='src="img/team2.png";'
+      onmouseover='this.src="img/googles.png";' >
       <p class="trainer-name">Надежда Надеждова</p>
       <p class="trainer-job">Второй пилот</p>
     </div>
     <div class="about-trainer col3">
-      <img src="img/team3.png" alt="" class="trainer-photo" >
+      <img src="img/team3.png" alt="" class="trainer-photo"
+      onmouseout='src="img/team3.png";'
+      onmouseover='this.src="img/controler.png";'>
       <p class="trainer-name">Ирина Иринова</p>
       <p class="trainer-job">Авиадиспетчер</p>
     </div>
     <div class="about-trainer col3">
-      <img src="img/team4.png" alt="" class="trainer-photo" >
+      <img src="img/team4.png" alt="" class="trainer-photo"
+      onmouseout='src="img/team3.png";'
+      onmouseover='this.src="img/technic.png";'> >
       <p class="trainer-name">Алена Аленова</p>
       <p class="trainer-job">Авиатехник</p>
     </div>
@@ -292,7 +305,7 @@
 
 
 
-<section class="adress">
+<section class="adress" id="adress" >
   <div class="container">
 
     <div class="adress-title center">
@@ -324,35 +337,37 @@
 </section>
 
 
-<footer>
-<div class="row">
+<footer class="footer">
 <div class="container">
-  <div class="footer-logo col4">Монгольфьеркин и КО</div>
-  <nav class="vooter-nav col8">
-    <ul>
-      <li><a href="" class="footer-links">Кто мы</a></li>
-      <li><a href="" class="footer-links">Фотографии</a></li>
-      <li><a href="" class="footer-links">План Полета</a></li>
-      <li><a href="" class="footer-links">Заказать</a></li>
-      <li><a href="" class="footer-links">Команда</a></li>
-      <li><a href="" class="footer-links">Контакты</a></li>
-    </ul>
-  </nav>
+   <div class="row">
+    <div class="logo left"><a class="logo-btn" href="">Монгольфьеркин и КО</a></div>
+
+    <div class="menu-nav right">
+      <ul>
+      <li class="inline"><a href="#video" class="menu-btn">Кто мы</a></li>
+      <li class="inline"><a href="#slider" class="menu-btn">Фотографии</a></li>
+      <li class="inline"><a href="#how-we-fly" class="menu-btn">План полета</a></li>
+      <li class="inline"><a href="#cost" class="menu-btn">Заказать</a></li>
+      <li class="inline"><a href="#trainers" class="menu-btn">Команда</a></li>
+      <li class="inline"><a href="#adress" class="menu-btn ">Контакты</a>
+      </ul></li>
+    </div>
+   </div>
   </div>
-</div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
+<script src="js/Timer.js"></script>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
 <script>
-  $("#slider").slick({
-slidesToShow: 4,
-slidesToScroll: 1,
-});
+$(document).ready(function(){
+      $('#gallery-photo').slick({
+        slidesToShow: 4,
+      });
+    });
 </script>
 
 </body>
