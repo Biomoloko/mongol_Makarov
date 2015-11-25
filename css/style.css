@@ -324,28 +324,78 @@ margin-top: 80px;
   font-size: 18px;
   font-weight: lighter;
 }
-.calculate-cost {margin-top: 18px;}
 
 
-.input-item {
-  padding-bottom: 40px;
+.calculate-cost {
+  margin-top: 0px;
+  min-width: 500px;
+
+}
+
+.input{
+  display: inline-block;
+  height: 40px;
+  border: 1px solid #000;
+  width: 320px;
+  background-repeat: no-repeat;
+  background-position: left 5px top 10px;
+  border-radius: 10px;}
+
+
+
+
+
+
+
+.input-route,.input-capacity{
+  background-image: url(..//img/Up-Down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+}
+.input-people{
+  background-image: url(..//img/people-intut.png);
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+}
+.input-phone{
+  background-image: url(..//img/phone-input.png);
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+}
+
+input{
+  width: 305px;
+  height: 26px;
+  margin-top: 4px;
+  margin-left: 5px;
   font-size: 18px;
-  font-weight: lighter;
-  display: block;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
-.input-first {margin-left: 40px;
-  border-radius: 5px;
+
+.line{
+  margin-top: 17px;
+  padding-bottom: 20px;
 }
-.input-second {margin-left: 10px;
-  border-radius: 5px;
+label{
+  display: block;
+  margin-bottom: 40px;
+  cursor: pointer;}
+.label{
+  float: left;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: lighter;
 }
-.input-third {margin-left: 52px;
-  border-radius: 5px;
-}
-.input-four {margin-left: 110px;
-  border-radius: 5px;
-}
+
+.input {margin-bottom: 20px;}
+
+
+
+
+
 
 .current-cost-cont {
   display: inline-block;
@@ -376,6 +426,7 @@ margin-top: 80px;
   border-radius: 5px;
   float: right;
   font-size: 18px;
+
    }
 
 

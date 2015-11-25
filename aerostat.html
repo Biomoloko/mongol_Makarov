@@ -142,6 +142,7 @@
 <section class="cost" id="cost">
   <div class="container">
   <div class="row">
+
     <div class="about-cost col6">
       <p class="about-cost-text">Расчитать стоимость</p>
       <p class="choose-direct">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки. </br></br>
@@ -151,17 +152,31 @@
 
     <div class="calculate-cost col6">
 
-      <label class="input-item" for="">Маршрут полета:
-      <input class="input input-first" type="text"></input></label>
+       <div class="line">
+        <div class="label">
+          <label for="Route">Маршрут Полета:</label>
+          <label for="Peoples">Колличество человек</label>
+          <label for="name">Имя и фамилия:</label>
+          <label for="phone">Телефон</label>
+        </div>
 
-      <label class="input-item" for="">Количество человек:
-      <input class="input input-second" type="text"></input></label>
 
-      <label class="input-item" for="">Имя и Фамилия:
-      <input class="input input-third" type="text"></input></label>
+           <div class="input input-name arrow-icon">
+             <input type="text" class="input-route" placeholder=""/ id="Route" name="name">
+           </div>
 
-      <label class="input-item" for="">Телефон:
-      <input class="input input-four" type="text"></input></label>
+           <div class="input input-name arrow-icon">
+             <input type="text" class="input-capacity" placeholder=""/ id="Peoples" name="phone">
+           </div>
+
+           <div class="input input-name people-icon">
+             <input type="text" class="input-people" placeholder=""/ id="name" name="name">
+           </div>
+
+           <div class="input input-name phone-icon">
+             <input type="text" class="input-phone" placeholder=""/ id="phone" name="phone">
+           </div>
+       </div>
 
 
         <div class="current-cost-cont">
@@ -170,7 +185,7 @@
         </div>
     </div>
   </div>
- </div>
+  </div>
 </section>
 
 
@@ -359,7 +374,7 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/Timer.js"></script>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
-
+<script src="js/scroll.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
 <script>
