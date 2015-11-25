@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -32,22 +33,24 @@
   <div class="container">
     <p class="promo-text">Организация полетов
 на воздушных шарах</p>
+  <div class="about-btn-cont">
     <a href="" class="about-btn">Подробнее</a>
+  </div>
   </div>
 </section>
 
 <section class="advantages">
-  <div class="container">
+  <div class="container bd">
     <div class="row">
-      <div class="advantage-item col3"><span class="advantage-text">Современный
-надежный шар</span></div>
-      <div class="advantage-item col3"><span class="advantage-text">Обучение
+      <div class="advantage-item forma1 col3"><p class="advantage-text">Современный
+надежный шар</p></div>
+      <div class="advantage-item forma2 col3"><p class="advantage-text">Обучение
 пилотированию
-    </span></div>
-      <div class="advantage-item col3"><span class="advantage-text">Фотосъемка
-в полете</span></div>
-      <div class="advantage-item col3"><span class="advantage-text">Потрясающие
-виды</span></div>
+    </p></div>
+      <div class="advantage-item forma3 col3"><p class="advantage-text">Фотосъемка
+в полете</p></div>
+      <div class="advantage-item forma4 col3"><p class="advantage-text">Потрясающие
+виды</p></div>
     </div>
   </div>
 </section>
@@ -55,16 +58,21 @@
 <section class="video">
   <div class="container">
   <div class="row">
-    <div class="about-video col4">
+    <div class="about-video col5">
       <p class="in-short h3">Вкратце</p>
-      <p>Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. Мы предлагаем полетать с нами!</p>
+      <p class="about-video-text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. </br> </br>Мы предлагаем полетать с нами!</p>
     </div>
-    <div class="video-viev col8">
-
+    <div class="video-viev col7">
+      <iframe width="700px" height="350px" src="https://www.youtube.com/embed/lxlgJvMLGrc" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   </div>
 </section>
+
+
+
+
+
 
 <section class="gallery">
 
@@ -84,7 +92,9 @@
 
 <section class="how-we-fly">
   <div class="container">
-    <p class="center h2">Как проходят полеты</p>
+  <div class=" how-we-fly-text-cont center">
+    <p class="h2 how-we-fly-text">Как проходят полеты</p>
+  </div>
   </div>
 </section>
 
@@ -295,7 +305,10 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
 <script>
-  $("#slider").slick();
+  $("#slider").slick({
+slidesToShow: 4,
+slidesToScroll: 3,
+});
 </script>
 
 </body>

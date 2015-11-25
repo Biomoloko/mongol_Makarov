@@ -10,8 +10,9 @@
 
 
 body {
-  min-width: 1200px;
+  min-width: 1300px;
   box-sizing: border-box;
+  font-family: "roboto"
 }
 
 a{text-decoration: none;}
@@ -39,6 +40,7 @@ div[class*="col"]{
   box-sizing:border-box;
 }
 
+  /*-------------HEADER------------*/
 
 .header {
   background-color: #2c2c2c;
@@ -50,48 +52,164 @@ div[class*="col"]{
   float: right;
 }
 
+/*-------------PROMO------------*/
 
 .promo{
   background-image: url(..//img/hot-air-balloons.jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 700px;
 }
 
 .promo-text{
   text-align: center;
   padding-top: 100px;
   color: #fff;
-  font-size: 40px;
+  font-size: 70px;
+  margin-top: 90px;
+  width: 750px;
 }
 .about-btn{
   text-align: center;
   display: inline-block;
-  padding-top: 40px;
+  margin-top: 200px;
+  border: 3px solid #fff;
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
 }
+
+.about-btn-cont {position: relative;}
+.about-btn:after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(..//img/arrowdown.png);
+  width: 20px;
+  height: 30px;
+  top: 270px;
+  left: 560px;
+
+}
+
+
+
+
+/*-------------Advantages------------*/
+
+
 
 
 .advantages{
   min-height: 90px;
 }
+.container{border: 1px solid green;}
+.advantage-item {
+}
+.advantage-text {
+  text-align: left;
+  padding-left: 80px;
+  font-size: 18px;
+}
+.advantage-item {
+  width: 291px;
+margin-top: 20px;
+margin-bottom: 20px;
+height: 70PX;
+}
+.forma1{
+  background-image: url(..//img/Forma-1.png);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 22% ;
+}
+.forma2{
+  background-image: url(..//img/Forma-2.png);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 22% ;
+}
+.forma3{
+  background-image: url(..//img/Forma-3.png);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 22% ;
+}
+.forma4{
+  background-image: url(..//img/Forma-4.png);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 22% ;
+}
+
+
+/*-------------VIDEO------------*/
 
 .video {min-height: 450px;}
-.video-viev {
-  background-color: #f44;
-  height: 300px;
+.about-video {position: relative;}
+.h3{font-size: 35px;}
+
+.h3:after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #3E98D7;
+  width: 70px;
+  right: 400px;
+  top:65px;
 }
+
+.video-viev {
+  height: 370px;
+}
+
+.about-video-text {
+  padding: 60px 80px 0px 0px;
+
+}
+
+
+
+/*-------------GALLERY------------*/
 
 .gallery {
   min-height: 350px;
 }
 .input-item {display: block;}
 
+
+/*-------------HOW-TO-FLY------------*/
+
 .how-we-fly{
-  min-height: 430px;
+  min-height: 600px;
   background-image: url(../img/how-fly.jpg);
   background-repeat: space;
   background-size: cover;
+  background-position: 0 200px;
 }
+.how-we-fly-text {
+margin-top: 80px;
+}
+.h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.how-we-fly-text-cont {position: relative;}
+.h2:after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #3E98D7;
+  width: 70px;
+  right: 535px;
+  top:55px;}
+
+
+
+
+
+
+
+
+
 .timer{
   min-height: 40px;
 }
