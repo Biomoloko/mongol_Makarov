@@ -177,8 +177,9 @@ height: 70PX;
 }
 .gallery-title-cont {
   margin-bottom: 50px;
-
+  position: relative;
 }
+.
 
 /*-------------HOW-TO-FLY------------*/
 
@@ -252,6 +253,16 @@ margin-top: 80px;
 }
 
 .about-cost {position: relative;}
+.about-cost-text {font-size: 35px;}
+.about-cost-text:after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #3E98D7;
+  width: 70px;
+  right: 500px;
+  top:65px;
+}
+
 
 .choose-direct{
   width: 400px;
@@ -329,6 +340,16 @@ margin-top: 80px;
   margin-top: 50px;}
 .pay-way-title {
   margin-bottom: 50px;
+  font-size: 35px;
+}
+
+.pay-way-title:after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #3E98D7;
+  width: 70px;
+  right: 500px;
+  top:65px;
 }
 .cash{
   font-size: 24px;
@@ -366,8 +387,18 @@ margin-top: 80px;
   font-weight: lighter;
   margin-top: 50px;
 }
-.common-questions {
 
+.common-questions {
+  font-size: 35px;
+  font-weight: normal;
+}
+.common-questions:after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #3E98D7;
+  width: 70px;
+  right: 500px;
+  top:65px;
 }
 
 .question-name {
@@ -395,6 +426,7 @@ margin-top: 80px;
  margin-top: 20px;
  padding-left: 40px;
 }
+
 
 
 
@@ -464,8 +496,15 @@ margin-top: 80px;
   font-size: 18px;
   margin-top: 10px;
 }
-
-
+.trainers-tem-cont {position: relative;}
+.trainers-team:after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #3E98D7;
+  width: 70px;
+  right: 560px;
+  top:65px;
+}
 
 /*------------------comments--------------------*/
 
@@ -490,8 +529,15 @@ margin-top: 80px;
 
 }
 
-
-
+.comment-title-cont {position: relative;}
+.comment-title:after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #3E98D7;
+  width: 70px;
+  right: 535px;
+  top:60px;
+}
 
 
 /*-------------adress---------------*/
@@ -507,11 +553,14 @@ margin-top: 80px;
 
 .adress-title{
   position: relative;
-  border: 1px solid;
+
   height: 120px;
   padding-top: 130px;
 }
-
+.write-adress {
+  font-size: 28px;
+  font-weight: bold;
+}
 .write-adress:before {
   position: absolute;
   content: "";
@@ -524,13 +573,13 @@ margin-top: 80px;
   top: 50px;
   margin: 0 auto;
 }
+
 .street {
   font-size: 20px;
   margin-top: 10px;
 }
 
 .office {
-  border: 1px solid;
   width: 370px;
   margin-left: 20px;
   position: relative;
