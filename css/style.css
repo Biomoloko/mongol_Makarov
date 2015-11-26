@@ -175,20 +175,23 @@ height: 70PX;
   content: "";
   border-bottom: 8px solid #3E98D7;
   width: 70px;
-  right: 400px;
-  top:65px;
+  left: 15px;
+  top: 65px;
 }
 
-iframe {
+/*iframe {
   height: 350px;
   width: 700px;
-}
+}*/
 
 .about-video-text {
   padding: 60px 80px 0px 0px;
-
 }
 
+.current-video {
+  height: 300px;
+  width: 600px;
+}
 
 
 /*-------------GALLERY------------*/
@@ -197,20 +200,31 @@ iframe {
   min-height: 350px;
 }
 .gallery-title-cont {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   position: relative;
 }
 
 #gallery-photo{position: relative;}
 
-.slick-prev{left: -115px;
-  transform: rotate(180deg); }
-.slick-next{right: -115px;}
+.slick-prev{
+  left: -150px;
+  transform: rotate(180deg)
+}
+.slick-next{
+  right: -150px;
+  ;
+}
+.slick-next:hover {
+  background-image: url(..//img/arrow-slider.png);
+}
+.slick-prev:hover {
+  background-image: url(..//img/arrow-slider.png);
+}
 
 .slick-prev, .slick-next{
   cursor: pointer;
   position: absolute;
-  top: 15%;
+  top: 18%;
   z-index: 5;
   border: none;
   background-color: transparent;
@@ -218,15 +232,18 @@ iframe {
   width: 120px;
   height: 120px;
   background-repeat: no-repeat;
-  background-image: url(http://vk.cc/4s2moU);
+  background-image: url(..//img/slider-arrow-na.png);
   outline: none;
-  background-size: 50% ;
+  background-size: 20% ;
 }
 .slick-next {
   cursor: pointer;
   position: absolute;
-  top: 40%
+  top: 45%
 }
+
+
+
 
 /*-------------HOW-TO-FLY------------*/
 
@@ -312,7 +329,7 @@ margin-top: 80px;
   content: "";
   border-bottom: 8px solid #3E98D7;
   width: 70px;
-  right: 500px;
+  left: 15px;
   top:65px;
 }
 
@@ -452,7 +469,7 @@ label{
   content: "";
   border-bottom: 8px solid #3E98D7;
   width: 70px;
-  right: 500px;
+  left: 15px;
   top:65px;
 }
 .cash{
@@ -501,7 +518,7 @@ label{
   content: "";
   border-bottom: 8px solid #3E98D7;
   width: 70px;
-  right: 500px;
+  left: 15px;
   top:65px;
 }
 
@@ -606,7 +623,8 @@ label{
   content: "";
   border-bottom: 8px solid #3E98D7;
   width: 70px;
-  right: 560px;
+  margin: 0 auto;
+
   top:65px;
 }
 
@@ -652,14 +670,14 @@ label{
   background-image: url(../img/sky-coments.jpg);
   background-repeat: space;
   background-size: cover;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .adress-title{
   position: relative;
 
-  height: 120px;
-  padding-top: 130px;
+  height: 150px;
+  padding-top: 150px;
 }
 .write-adress {
   font-size: 28px;
@@ -674,7 +692,7 @@ label{
   background-size: 100% ;
   left: 0;
   right: 0;
-  top: 50px;
+  top: 60px;
   margin: 0 auto;
 }
 
@@ -687,6 +705,7 @@ label{
   width: 370px;
   margin-left: 20px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 
