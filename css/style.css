@@ -301,14 +301,25 @@ margin-top: 80px;
   content:"\00a0\00a0";
 }
 
+.measure-days {width: 80px;}
+.measure-hours {width: 110px;}
+.measure-minutes {width: 120px;}
+.measure-seconds {width: 80px;}
+.days {width: 25px;}
+.hours {width: 25px;}
+.minutes {width: 40px;}
+.seconds {width: 40px;}
+
 .timer {
   margin-top: 25px;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   color: #26668e;
 }
 
-.count {float: right;}
+.count {
+
+/*float: right;*/}
 
 /*----------------COST--------------------*/
 
@@ -352,45 +363,45 @@ margin-top: 80px;
 .input{
   display: inline-block;
   height: 40px;
-  border: 1px solid #000;
+  border: 1px solid #d5d5d5;
   width: 320px;
   background-repeat: no-repeat;
   background-position: left 5px top 10px;
   border-radius: 10px;}
 
 
-
-
-
-
-
-.input-route,.input-capacity{
-  background-image: url(..//img/Up-Down-arrow.png);
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-}
-.input-people{
-  background-image: url(..//img/people-intut.png);
-  background-repeat: no-repeat;
-  background-position: 2% 50%;
-}
-.input-phone{
-  background-image: url(..//img/phone-input.png);
-  background-repeat: no-repeat;
-  background-position: 2% 50%;
-}
-
 input{
-  width: 305px;
+  width: 260px;
   height: 26px;
-  margin-top: 4px;
-  margin-left: 5px;
+  margin-top: 6px;
+  margin-left: 35px;
   font-size: 18px;
   background-color: transparent;
   outline: none;
   border: none;
 }
+ .input-phone,.input-people{
+  width: 280px;
+  height: 26px;
+  margin-top: 6px;
+  margin-left: 35px;
+  font-size: 18px;
+  background-color: transparent;
+  outline: none;
+  border: none;}
 
+.arrow-icon {
+  background-image: url(..//img/Up-Down-arrow.png);
+  background-position: 96% 50%;
+}
+.people-icon{
+  background-image: url(..//img/people-intut.png);
+  background-position: 4% 45%;
+}
+.phone-icon{
+  background-image: url(..//img/phone-input.png);
+  background-position: 4% 45%;
+}
 
 .line{
   margin-top: 17px;
