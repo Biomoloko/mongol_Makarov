@@ -11,7 +11,7 @@
 
 
 body {
-  min-width: 900px;
+  min-width: 1200px;
   box-sizing: border-box;
   font-family: "roboto"
 }
@@ -302,14 +302,14 @@ margin-top: 80px;
 }
 
 .measure-days {width: 80px;}
-.measure-hours {width: 110px;}
+.measure-hours {width: 130px;}
 .measure-minutes {width: 120px;}
 .measure-seconds {width: 80px;}
 .days {
-  margin-left: 200px;
+  margin-left: 230px;
   width: 25px;
 }
-.hours {width: 25px;}
+.hours {width: 0px;}
 .minutes {width: 40px;}
 .seconds {width: 40px;}
 
@@ -320,6 +320,9 @@ margin-top: 80px;
   color: #26668e;
 }
 
+.measure-hours:before {
+content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
 
 
 /*----------------COST--------------------*/
@@ -391,10 +394,16 @@ input, select{
   outline: none;
   border: none;}
 
-.arrow-icon {
+.input-route,.input-capacity {
+  width: 280px;
+}
+
+
+/*.arrow-icon {
   background-image: url(..//img/Up-Down-arrow.png);
   background-position: 96% 50%;
-}
+}*/
+
 .people-icon{
   background-image: url(..//img/people-intut.png);
   background-position: 4% 45%;
@@ -429,7 +438,7 @@ label{
 .current-cost-cont {
   display: inline-block;
   min-height: 60px;
-  min-width: 500px
+  min-width: 545px
 }
 .current-cost {
   font-weight: bold;
@@ -456,7 +465,7 @@ label{
   float: right;
   font-size: 18px;
 
-   }
+  }
 
 
 

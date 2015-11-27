@@ -5,7 +5,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <div class="menu-nav right">
       <ul>
       <li class="inline"><a href="#video" class="menu-btn">Кто мы</a></li>
-      <li class="inline"><a href="#gallery-photo" class="menu-btn">Фотографии</a></li>
+      <li class="inline"><a href="#gallery" class="menu-btn">Фотографии</a></li>
       <li class="inline"><a href="#how-we-fly" class="menu-btn">План полета</a></li>
       <li class="inline"><a href="#cost" class="menu-btn">Заказать</a></li>
       <li class="inline"><a href="#trainers" class="menu-btn">Команда</a></li>
@@ -67,7 +68,7 @@
       <p class="about-video-text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. </br></br>Мы предлагаем полетать с нами!</p>
     </div>
     <div class="video-viev col7">
-      <iframe class="current-video" src="https://www.youtube.com/embed/0dRnvso2qGw" allowfullscreen></iframe>
+      <iframe width="700" height="315" src="https://www.youtube.com/embed/3UGXXC3-x_M" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   </div>
@@ -78,7 +79,7 @@
 
 
 
-<section class="gallery">
+<section class="gallery" id="gallery">
 
   <div class="container">
    <div class="gallery-title-cont">
@@ -163,11 +164,21 @@
 
 
            <div class="input arrow-icon">
-             <select type="text" class="input-route" placeholder="" id="Route" name="name"></select>
+             <select type="text" class="input-route" placeholder="" id="Route" name="name">
+             <option value="">Сестрорецк - Парнас</option>
+             <option value="">Гатчина - Девяткино</option>
+             <option value="">Москва - Абакан</option>
+             <option value="">Пятигорск - Гондурас</option>
+             </select>
            </div>
 
            <div class="input arrow-icon">
-             <select type="text" class="input-capacity" placeholder="" id="Peoples" name="phone"></select>
+             <select type="text" class="input-capacity" placeholder="" id="Peoples" name="phone">
+               <option value=""> менее 2</option>
+               <option value="">2-4</option>
+               <option value="">4 - 10</option>
+               <option value="">10 - over 100500</option>
+               </select>
            </div>
 
            <div class="input people-icon">
@@ -257,12 +268,12 @@
 </section>
 
 
-<section class="team">
+<section class="team" id="trainers">
  <div class="container">
   <div class="row">
        <div class="trainers-tem-cont"><p class="trainers-team center h2">Команда Инструкторов</p>
        </div>
-   <div class="trainers" id="trainers">
+   <div class="trainers">
     <div class="about-trainer col3">
       <img src="img/team1.png" height="160" width="160" alt="" class="trainer-photo"
       onmouseout='src="img/team1.png";'
@@ -361,7 +372,7 @@
     <div class="menu-nav right">
       <ul>
       <li class="inline"><a href="#video" class="menu-btn">Кто мы</a></li>
-      <li class="inline"><a href="#gallery-photo" class="menu-btn">Фотографии</a></li>
+      <li class="inline"><a href="#gallery" class="menu-btn">Фотографии</a></li>
       <li class="inline"><a href="#how-we-fly" class="menu-btn">План полета</a></li>
       <li class="inline"><a href="#cost" class="menu-btn">Заказать</a></li>
       <li class="inline"><a href="#trainers" class="menu-btn">Команда</a></li>
